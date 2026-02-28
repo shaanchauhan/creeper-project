@@ -27,10 +27,10 @@ function setup() {
 //  false. The loop truly terminates and never runs again.
 // ============================================================
 function draw() {
-  background(34, 130, 34);
+  background(34, 30, 134);
 
   // Ground
-  fill(101, 67, 33);
+  fill(81, 187, 53);
   noStroke();
   rect(0, height - 60, width, 60);
 
@@ -82,13 +82,13 @@ function drawCreeper(cx, cy) {
   // 2D array = pixel grid. 1 = green body, 2 = black detail
   const facePixels = [
     [1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1],
     [1, 2, 2, 1, 1, 2, 2, 1],
     [1, 2, 2, 1, 1, 2, 2, 1],
     [1, 1, 1, 2, 2, 1, 1, 1],
     [1, 1, 2, 2, 2, 2, 1, 1],
-    [1, 2, 2, 1, 1, 2, 2, 1],
-    [1, 2, 1, 1, 1, 1, 2, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 2, 2, 2, 2, 1, 1],
+    [1, 1, 2, 1, 1, 2, 1, 1],
   ];
 
   const colorMap = {
